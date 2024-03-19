@@ -55,7 +55,7 @@ vector<int> duplicates(int arr[], int n)
 
 int main()
 {
-    int numRay[] = { 0, 4, 3, 2, 7, 8, 2, 3, 1 };
+    int numRay[] = { 0, 4, 3, 2, 7, 8, 2, 3, 0 };
     int n = sizeof(numRay) / sizeof(numRay[0]);
 
     vector<int> ans = duplicates(numRay, n);
