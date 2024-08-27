@@ -3,10 +3,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// arr[0..n-1] represents sizes of packets
-// m is number of students.
-// Returns minimum difference between maximum
-// and minimum values of distribution.
 int findMinDiff(int arr[], int n, int m)
 {
 	// if there are no chocolates or number
@@ -24,11 +20,6 @@ int findMinDiff(int arr[], int n, int m)
 
 	// Largest number of chocolates
 	int min_diff = INT_MAX;
-
-	// Find the subarray of size m such that
-	// difference between last (maximum in case
-	// of sorted) and first (minimum in case of
-	// sorted) elements of subarray is minimum.
 
 	for (int i = 0; i + m - 1 < n; i++) {
 		int diff = arr[i + m - 1] - arr[i];
@@ -49,4 +40,3 @@ int main()
 	return 0;
 }
 
-// This code is contributed by Aditya Kumar (adityakumar129)
